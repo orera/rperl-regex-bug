@@ -1,0 +1,9 @@
+version: "3"
+services:
+  rperl:
+    image: wbraswell/rperl_cpan
+    volumes:
+      - $PWD:/opt/rperl-regex-bug
+    working_dir: /opt/rperl-regex-bug
+    entrypoint: "tail -f /dev/null"
+
